@@ -65,7 +65,8 @@ Let the magic happen
 
 ```sh
 gcloud run deploy monica \
---region=us-west1
+--platform=managed \
+--region=us-west1 \
 --image=gcr.io/$GCLOUD_PROJECT/monica \
 --port=80 \
 --set-env-vars=APP_ENV=production,APP_URL=$HOST,DB_CONNECTION=mysql,DB_DATABASE=$DB_DATABASE,DB_HOST=$DB_HOST,DB_PORT=$DB_PORT \
